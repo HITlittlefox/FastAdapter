@@ -69,6 +69,15 @@ kapt {
 
 repositories {
     maven {
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        mavenLocal()
+        mavenCentral()
+        google()
+        // jcenter()
+        maven { url "https://jitpack.io" }
+//        mavenCentral(){url "http://jcenter.bintray.com/"}
         url "https://jitpack.io"
         content {
             includeGroup "com.github.MFlisar"
@@ -170,6 +179,15 @@ dependencies {
 
 buildscript {
     repositories {
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        mavenLocal()
+        mavenCentral()
+        google()
+        // jcenter()
+        maven { url "https://jitpack.io" }
+//        mavenCentral(){url "http://jcenter.bintray.com/"}
         mavenCentral()
     }
 
